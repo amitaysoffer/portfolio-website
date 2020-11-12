@@ -20,10 +20,12 @@ body {
   --color-primarily: #86A5D9;
   --color-secondary: #EF2D56;
 
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  --fs-body: 1rem;
+
+
+  --fs-h1: 4.5rem;
+  --fs-h2: 3.75rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1.125rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
@@ -58,6 +60,21 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+}
+
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -73,9 +90,7 @@ a {
   opacity: 0.9;
 }
 
-/* Hero */
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
-
+/* Header */
 .hero {
   background: url('./images/hero-img.jpg') no-repeat center center/cover;
   height: 100vh;
@@ -97,7 +112,6 @@ a {
 }
 
 /* Navbar */
-
 .nav {
   display: flex;
   align-items: center;
@@ -121,7 +135,9 @@ a {
   border-bottom: var(--color-primarily) 2px solid;
 }
 
-.hero-content {
+/* Header Content */
+
+.header-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,10 +148,23 @@ a {
   padding-bottom: 20px;
 }
 
-.hero-content strong {
+.header-content strong {
   color: var(--color-primarily);
 }
 
+/* About Section */
+#about {
+  margin-right: 51px;
+  padding: 2em 4em;
+}
+
+.image-wrapper img {
+  border-radius: 50%;
+  width: 70%;
+}
+
+
+/* About */
 
 /* Cursor */
 /* .txt-type>.txt {
