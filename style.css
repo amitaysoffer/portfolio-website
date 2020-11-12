@@ -18,7 +18,7 @@ body {
   --color-light: #fff;
   --color-dark: #120114;
   --color-primarily: #86A5D9;
-  --color-secondary: #750D37;
+  --color-secondary: #EF2D56;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -56,6 +56,21 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  font-size: var(--fs-h3);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 /* Hero */
@@ -111,6 +126,10 @@ a {
   justify-content: center;
   align-items: center;
   height: 70%;
+}
+
+.content-wrapper h2 {
+  padding-bottom: 20px;
 }
 
 .hero-content strong {
